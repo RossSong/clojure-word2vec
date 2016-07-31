@@ -33,12 +33,12 @@
        )))
 
 (defn create-input-format
-  "Takes a text file and creates the input format required
+  "Takes a path to a text file and returns the input format required
   for training the word2vec model"
   [inpfile]
-  (let [f (io/file (io/resource inpfile))]
+  (let [f (io/file inpfile)]
     (if (not (.exists f))
-      (throw (IllegalStateException. (str "Please download " inpfile " and place it in the resources folder ")))
+      (throw (IllegalStateException. (str inpfile " is not a valid file path ")))
       (let [data  (Common/readToList f)]
         (->> data
              ;split the string and return a seq instead of Array of strings
