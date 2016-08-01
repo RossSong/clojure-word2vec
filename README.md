@@ -28,7 +28,7 @@ Here we'll download James Joyce's Ulysses from [Project Gutenberg](https://www.g
 
 ```clojure
 (def data
-  (create-input-format "ulysses.txt"))
+  (create-input-format "path/to/ulysses.txt"))
 ```
 
 Create the model and train it, using the default hyperparameters
@@ -48,7 +48,7 @@ Find the closest words to a given word
 (get-matches model "woman")
 ```
 
-### A longer introduction is available in the [docs](https://github.com/Bridgei2i/clojure-word2vec/blob/master/doc/intro.md) .
+### A longer introduction is available in the [docs](https://github.com/shark8me/clojure-word2vec/blob/master/doc/intro.md) .
 
 ## License
 
