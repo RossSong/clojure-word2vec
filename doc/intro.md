@@ -54,6 +54,8 @@ the [Incanter](http://Incanter.org) cosine-similarity API.
 (defn cosine-sim
   [model word1 word2]
   (let [rawvecfn  #(.getRawVector (.forSearch model) %)
+        [a1 a2] (map rawvecfn [word1 word2])]
+    (i-stat/cosine-similarity a1 a2)))
 
 (cosine-sim appvec "g5" "ipod")
 
