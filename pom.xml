@@ -16,7 +16,7 @@
   <scm>
     <connection>scm:git:git://github.com/shark8me/clojure-word2vec.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/shark8me/clojure-word2vec.git</developerConnection>
-    <tag>7c4e9bcbb19d998bab7123659fb4ca67d700d678
+    <tag>f7d02277b7863e26fd1e9e135c64f33c9b80c6e5
 </tag>
     <url>https://github.com/shark8me/clojure-word2vec</url>
   </scm>
