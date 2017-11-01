@@ -13,7 +13,7 @@
 
 ;let's read the apple dataset and train a word2vec model on the data
 (def appvec
-  (-> (read-filtered-dataset "resources/apple-data.txt.gz") word2vec))
+  (-> (read-filtered-dataset "examples/apple-data.txt.gz") word2vec))
 
 ;see the top view words in the vocabulary
 (take 20 (.getVocab appvec))
